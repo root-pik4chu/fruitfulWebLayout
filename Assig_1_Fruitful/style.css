@@ -1,0 +1,748 @@
+@font-face {
+   font-family: f1;
+   src: url(Assets/fonts/GILROY-LIGHT.TTF);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: rgb(0, 0, 0);
+font-family: f1;
+}
+
+
+
+body{ 
+height: 100%;
+width: 100%;
+/* background-color: rgb(236, 242, 255); */
+}
+
+.d-flex{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.d-flex-c{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+#page1 , #page2 , #page3 , #page4{
+   width: 100%;
+   height: 100vh;
+   /* background-color: #fdfdfd; */
+   
+}
+video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   min-height: 100vh;
+   z-index: -1;
+ }
+#page2{
+   background-color: #fdfdfd; 
+   height: 150vh;
+}
+
+#page3{
+   /* background-color: rgb(114, 114, 255); */
+}
+
+#page4{
+   /* background-color: red; */
+}
+
+#navData{
+   width: 100%;
+   height: 10vh;
+
+}
+
+nav{
+   width: 90%;
+   height: 10vh;
+   /* background-color: red; */
+   display: flex;
+   /* z-index: 1; */
+}
+
+
+#right-nav{
+   width: 20%;
+   height: 100%;
+   /* background-color: greenyellow ; */
+}
+#lft-nav{
+   width: 20%;
+   height: 100%;
+   /* background-color: greenyellow ; */
+   gap: 1vw;
+}
+#ctr-nav{
+   width: 60%;
+   height: 100%;
+   /* background-color: blueviolet; */
+}
+
+
+#small-head-1 , #small-head-2{
+   font-size: 1vw;
+}
+
+
+#ctr-head{
+   font-size: 1vw;
+   
+}
+.ctr-data{
+   /* width: 30%; */
+   padding: .8vw 3vw;
+   /* background-color: #4343436b; */
+   background-color: #212121;
+
+   
+   height: 50%;
+   gap: 4vw;
+   border-radius: 5px;
+   color: #fff;
+}
+.ctr-data h4{
+   color: #fff;
+}
+#ctr-head h1:nth-child(3){
+   color: rgb(255, 61, 93);
+   text-decoration: underline;
+}
+
+
+#button{
+   padding: .6vw 2vw;
+   border-radius: 5px;
+   border: 1px  solid #dadada;
+   color: #000;
+   font-size: .8vw;
+   cursor: pointer;
+   font-weight: 900;
+   border: none;
+}
+
+
+#lft-nav button:nth-child(2){
+   background-color: #054f31;
+   color: #fff;
+   
+
+}
+
+#lft-nav button:nth-child(1){
+   background-color: #212121;
+   color: #fff;
+   
+
+}
+
+.text-data{
+   position: relative;
+   width: 30%;
+   height: 50%;
+   top: 7vw;
+   left: 10vw;
+   /* background-color: red; */
+   gap: 1.5vw;
+   align-items: start;
+}
+.text-data h1{
+   font-size: 4vw;
+}
+
+.text-data p{
+   font-size: 1.5vw;
+}
+
+
+
+.text-data button{
+   background-color: #054f31;
+   color: #fff !important;
+}
+
+.page-1-footer{
+   width: 100%;
+   background-color: rgb(146, 255, 179);
+   height: 10vh;
+   position: relative;
+   top: 30vh;
+   color: #054f31;
+   background-color: #d9ffe0;
+
+}
+.page-1-footer p:nth-child(1){
+   font-weight: 900;
+}
+
+
+.page2-write-1 {
+   width: 100%;
+   height: 40vh;
+   /* line-height: .5vw; */
+   padding-top: 5vw;
+}
+.page2-write-1 h1{
+   font-size: 2.5vw;
+}
+
+#span-img-1{
+   position: relative;
+   
+   display: inline-block;
+   width: 5vw;
+   height: 3.5vw;
+   background-color: #ffa2ee;
+   
+}
+#span-img-1:nth-child(1){
+   top: -11%;
+   rotate: -3deg;
+}
+.span-img2{
+   top: 30% !important;
+}
+
+#space{
+   width: 50vh;
+   height: 15vh;
+   /* background-color: red; */
+}
+
+.page2-write-2 h1{
+   font-size: 2.5vw;
+}
+.page2-p{
+   padding-top: 1vw;
+   font-weight: 900;
+   font-size: .8vw;
+}
+
+.page2-twoBox{
+   width: 100%;
+   height: 65vh;
+   /* background-color: red; */
+   margin-top: 3vw;
+}
+.page2-towBoWrapper{
+   width: 70%;
+   height: inherit;
+   /* background-color: blue; */
+   gap: 1vw;
+   justify-content: space-between;
+}
+.img-text{
+   /* margin: 0 1vw; */
+   border-radius: 1vw;
+   width: calc(100% / 2);
+   height: 90%;
+   transition: width .5s;
+   background-color: rgb(22, 23, 62);
+
+}
+.img-text:nth-child(1){
+   background-image: url(Assets/img/wp4304699-yumeko-jabami-wallpapers.png);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.img-text:nth-child(2){
+ 
+   background-image: url(Assets/img/wp4304764-yumeko-jabami-wallpapers.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.img-text:hover{
+   width: 70%;
+}
+
+#page3-button{
+   margin-top: 2vw;
+   gap: 1vw;
+  
+}
+#page3-button button{
+   background-color: #ffffff;
+   color:rgb(1, 1, 1);
+   font-weight: 900;
+   border: 1px solid black;
+   /* border-radius: 50px; */
+}
+.image-five{
+   margin-top: 5vw;
+   width: 100%;
+   height: 35vh;
+   /* background-color: red; */
+}
+.imageWrapper{
+   width: 70%;
+   height: 100%;
+   /* background-color: greenyellow; */
+   /* gap: .5vw ; */
+}
+.singleImage{
+   margin-left: -1vw;
+   width: 18%;
+   height: inherit;
+   /* background-color: rgb(0, 255, 17); */
+   border: 1px solid black;
+   /* transform: rotate(1deg); */
+   transition: ease-in-out .2s;
+   border-radius:  10px;
+   overflow: hidden;
+   box-shadow: -1px 1px 5px;
+}
+.singleImage img{
+   object-fit: cover;
+   width: 100%;
+   
+}
+.singleImage:hover{
+   background-color: red;
+   transform: scale(1.03);
+   z-index: 5;
+}
+.page3-Single-Button{
+   margin-top: 3vw;
+   
+}
+.page3-Single-Button button{
+   background-color: #054f31;
+   color: white !important;
+}
+#page4-text-h1{
+   width: 100%;
+   height: 20vh;
+   /* background-color: green;    */
+   font-size: 1.2vw;
+
+
+   
+}
+.page4-h1-p{
+   margin-top: 1vw;   
+}
+.page4-h1-p p{
+   font-size: .8vw;
+}
+
+
+
+#page4-cards{
+   margin-top: 3vw;
+   width: 100%;
+   height: 70%;
+   /* background-color :pink; */
+}
+
+#card{
+   width: 70%;
+   height: 100%;
+   /* background-color: rgb(255, 66, 66); */
+   border-radius: 30px;
+   overflow: hidden;
+   color: white;
+   
+}
+
+.card-text{
+   width: 45%;
+   height: 100%;
+   /* background-color: rgb(255, 73, 103);
+    */
+   background-color: #054f31;
+   
+
+}
+#page4-cardText-p p{
+   color: #fff !important;
+}
+#page4-card-h1 h1{
+   color: #fff !important;
+}
+.card-text{
+   align-items: start;
+   gap: 1.5vw;
+   padding: 0 2.5vw;
+   color: #fff;
+
+}
+.card-list li{
+   list-style  :disc;
+   color: #fff;
+
+}
+
+.card-image{
+   width: 55%;
+   height: 100%;
+   background-color: rgb(238, 238, 238);
+   
+}
+.img-wrapper{  
+   width: 80%;
+   height: 70%;
+   /* background-color: rgb(47, 92, 22); */
+   transform-style: preserve-3d ;
+  
+}
+#img-page4{
+   width: 80%;
+   height: 80%;
+   /* background-color: red; */
+   position: relative;
+   
+}
+.img-wrapper img{
+   width: 60%;
+   position: absolute;
+   left: 20%;
+   top: -5%;
+   transform: translate(-50%, -50%);
+   transform: translateZ(50px);
+   border-radius: 20px;
+   transform: translateZ(20px);
+}
+
+.text-page4{
+   position: absolute;
+   left: -9%;
+   top: 5%;
+   transform: translate(-50%, -50%);
+   width: 50%;
+   height: 25%;
+   background-color: rgba(36, 36, 36, 0.479);
+   z-index: 99;
+   transform: translateZ(20px);
+   padding: 1.2vw;
+   border-radius: 10px;
+  
+}
+.text-page4 p{
+   font-weight: 900;
+   color: #fff;
+   /* padding: 1vw; */
+   transform: translateZ(100px);
+   
+}
+
+#page5{
+   width: 100%;
+   height: 100vh;
+}
+
+.page5-wrapper{
+   width: 70%;
+   padding-top: 10vh;
+   height: 70vh;
+   /* background-color: red; */
+}
+.page5-wrapper h1{
+   font-weight: 900;
+   font-size: 4vw;
+   text-align: center;
+}
+
+.page5-wrapper img{
+   padding-top: 1vw;
+   width: 10%;
+   border-radius: 50%;
+}
+
+#maya{
+   padding-top: 1vw;
+   font-weight: 900;
+}
+
+
+
+
+#page6{
+   width: 100%;
+   height: 100vh;
+   /* background-color: red; */
+   justify-content: start;
+}
+
+.page6-h1{
+   padding-top: 5vw;
+   gap: 1vw;
+
+}
+.page6-h1 h1{
+   font-size: 2.5vw;
+}
+
+.two-button{
+   width: 70%;
+   /* gap: 1vw; */
+   padding: .1vw .1vw;
+   background-color: rgb(220, 220, 220);
+   text-align: center;
+   justify-content: space-evenly;
+   border-radius: 50px;
+}
+.two-button button{
+   background-color: rgb(219, 219, 219);
+   padding: .7vw 3vw;
+   border-radius: 6vw;
+}
+.page6-threeBoxex {
+   width: 100%;
+   height: 30vh;
+   /* background-color: blue; */
+   margin-top: 4vw;
+} 
+
+
+.page6-box-wrapper{
+   width: 70%;
+   height: 100%;
+}
+
+.page6-absolute{
+   position: absolute;
+   /* padding: .5vw 1vw; */
+    background-color: #fff;
+    border-radius: 24px;
+    padding: .2vw .7vw;
+    top: .8vw;
+    left: 50%;
+}
+.cardPage6{
+   width: 17%;
+   height: 90%;
+   border-radius: 20px;
+   /* background-color: greenyellow; */
+   background-color: #054f31;
+
+   justify-content: space-between;
+   color: #fff;
+   position: relative;
+}
+.card6Upper{
+   width: 100%;
+   height: 50%;
+   /* background-color: goldenrod; */
+}
+.upperOne{
+   width: 55%;
+   height: 80%;
+   /* background-color: red; */
+   position: relative;
+   padding: 1vw 1vw;
+   gap: 3vw;
+}
+.upperOne h5{
+   font-size: .8vw;
+   font-weight: 900;
+   color: #fff;
+}
+.upperOneMoney{
+   justify-content: start;
+   align-items: start;
+   
+}
+.upperOneMoney p{
+   font-size: 1vw;
+   font-weight: 900;
+   color: #fff;
+
+}
+.upperOneMoney h1{
+   font-size: 4.5vw;
+   line-height: 5vw;
+   color: #fff;
+
+}
+.uppertwo{
+   width: 40%;
+   height: 100%;
+   /* background-color: navajowhite; */
+   align-items: end;
+   justify-content: start;
+   /* padding: 1vw 0; */
+}
+
+.uppertwo h5{
+   /* padding-left: .2vw; */
+   color: #fff;
+
+}
+
+
+.card6lower{
+   width: 100%;
+   height: 20%;
+   /* background-color: #054f31; */
+   /* text-align: center; */
+   padding: 1vw 1.5vw;
+   color: #fff;
+
+}
+.card6lower p{
+   font-size: .7vw;
+   color: #fff;
+   font-weight: 900;
+}
+
+.cardPage6:nth-child(1){
+   /* transform: rotate(-5deg); */
+   transform: translateX(1vw) rotate(-5deg);
+   border: 1px solid #fff;
+}
+.cardPage6:nth-child(3){
+   /* transform: rotate(-5deg); */
+   transform: translateX(-1vw) rotate(5deg);
+   border: 1px solid #fff;
+
+}
+.cardPage6:nth-child(2){
+   /* transform: rotate(-5deg); */
+   transform: translateY(-.5vw);
+   border: 1px solid #fff;
+   z-index: 2;
+
+
+}
+
+.page6Last{
+   width: 100%;
+   height: 20vh;
+   margin-top: 3vw;
+   /* background-color: red; */
+}
+.page6-last-head  h5{
+   font-size: 1vw;
+   font-weight: 900;
+}
+/* #yo{
+   width: 50%;
+   height: 100%;
+   background-color: green;
+} */
+.page6-last-twoCell{
+   width: 35%;
+   height: 100%;
+   /* background-color: green; */
+   justify-content: space-between;
+}
+
+.common{
+   h6{
+      padding: .7vw;
+      /* background-color: blue; */
+      font-size: .7vw;
+      font-weight: 900  ;
+      
+      
+   }
+}
+.left , .right{ 
+   width: 50%;
+}
+
+#page7{
+   width: 100%;
+   height: 100vh;
+   /* background-color: red; */
+   background-color: #054f31;
+
+}
+
+
+#line{
+   width: 70%;
+   height: 30vh;
+   /* background-color: pink; */
+   justify-content: space-between;
+}
+
+.line-img{
+   width: 16%;
+   height: 85%;
+   background-color: rgb(233, 236, 255);
+   border-radius: 10px;
+   
+   
+}
+.line-img img{
+   width: 100%;
+}
+
+#line:nth-child(2){
+   width: 90%;
+}
+
+
+#line:nth-child(2) .line-img{
+   width: 12%;
+}
+
+
+.page7Text{
+   width: 40%;
+   height: 100%;
+   /* background-color: rgb(255, 255, 255);   */
+   text-align: center;
+   /* padding: ; */
+}
+.page7Text h1{
+   padding: 1vw;
+   font-size: 2vw;
+   color: #fff;
+   font-weight: 900;
+}
+.page7Text p{
+   padding: 1vw;
+   color: #fff;
+   font-weight: 900;
+}
+
+.line1 .line-img:nth-child(1){
+   transform: translateX(3vw) rotate(10deg);
+}
+.line1 .line-img:nth-child(2){
+   transform: rotate(-10deg);
+}
+.line1 .line-img:nth-child(3){
+   transform:translateX(-3vw)  rotate(10deg);
+}
+.line2 .line-img:nth-child(3){
+   transform: translateX(-2.5vw)rotate(10deg);
+}
+
+.line2 .line-img:nth-child(1){
+   transform:translateX(2.5vw) rotate(-10deg);
+}
+
+
+.line3 .line-img:nth-child(1){
+   transform:translateX(2.5vw) rotate(-10deg);
+}
+.line3 .line-img:nth-child(2){
+   transform: rotate(10deg);
+}
+.line3 .line-img:nth-child(3){
+   transform:translateX(-2.5vw) rotate(-10deg);
+}
+
+#page8{
+   width: 100%;
+   height: 100vh;
+   background-color: red;
+}
+
+
+
